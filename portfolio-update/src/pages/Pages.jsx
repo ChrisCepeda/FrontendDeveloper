@@ -4,13 +4,17 @@ import Navbar from '../component/Navbar'
 import './Pages.scss'
 
 
+
 const Pages = () => {
   return (
-    <div className='Wrapper'>
-    
-    <Navbar />
-    <Home />
+  
+    <div className='Wrapper' id="outer-container">
+     <div id="page-wrap">
+      <Navbar />
+       <Home />
+     </div>
     </div>
+    
   )
 }
 
