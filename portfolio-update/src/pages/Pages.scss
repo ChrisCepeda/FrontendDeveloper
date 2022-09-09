@@ -1,13 +1,14 @@
-.Wrapper{
-    margin: 2% 10%;
-    height: 90vh;
-    background-color: rgb(78, 126, 110);
+
+
+
+  .Wrapper{
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(129, 147, 141);
     background-image: url(../assets/images/intro.jpg);
     background-size:contain;
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: right;
-
+    background-position: top center;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
     //border: 1px solid #1f4037;
   
@@ -15,12 +16,20 @@
     @media screen and (max-width:1024px) {
        
         max-width: 100%;
-        margin:0; 
-        background-size: cover;
+        background-size: contain;
         background-position: top center;
 
         
     }
+  @media screen and (max-width:845px) {
+       
+        width: 100%;
+        margin:0; 
+        background-size: cover;
+        background-position: bottom right;
+        
+    }
+    
 
 
-}
+  }

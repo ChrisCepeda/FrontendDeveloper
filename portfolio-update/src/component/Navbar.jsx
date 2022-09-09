@@ -1,18 +1,12 @@
 
 import './Navbar.scss'
 import { FaHome } from 'react-icons/fa'
-import Burger from './Burger'
-import { useState } from 'react'
+import Sidebar from './Sidebar'
 
 
 
 
-export default function Navbar  () { 
-
-const [burgerOpen, setBurgerOpen] = useState(false); 
-const toggleBurger = () => {
-  setBurgerOpen(!burgerOpen)
-}
+const Navbar = () => {
 
 return(
 
@@ -35,16 +29,12 @@ return(
             <li><a href="/">ABOUT</a></li>
             <li><a href="/" className='active'>
            <FaHome size={26} style={{verticalAlign:'bottom'}}  />
-         
-            
+      
             </a></li>
         </ul>
       </div>
 
-
-  <div className='burger' onClick={toggleBurger}>
-    <Burger isOpen={burgerOpen}/>
-    </div>
+      <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
 
   </div>
         
@@ -53,4 +43,5 @@ return(
 
 }
 
+export default Navbar
 
