@@ -1,5 +1,9 @@
-.Wrapper{
-    
+
+
+
+  .Wrapper{
+    width: 100%;
+    max-width: 100%;
     background-color: rgb(129, 147, 141);
     background-image: url(../assets/images/intro.jpg);
     background-size:contain;
@@ -11,22 +15,21 @@
     
     @media screen and (max-width:1024px) {
        
-        width: 100%;
-        margin:0; 
+        max-width: 100%;
         background-size: contain;
         background-position: top center;
 
         
     }
-   /* @media screen and (max-width:845px) {
+  @media screen and (max-width:845px) {
        
         width: 100%;
         margin:0; 
         background-size: cover;
-        background-position: top center;
+        background-position: bottom right;
         
-    }*/
+    }
     
 
 
-}
+  }

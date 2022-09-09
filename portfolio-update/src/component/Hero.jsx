@@ -21,7 +21,8 @@ const Hero = () => {
         
           initial={{x:100, opacity: 0,}}
            animate={{x:0, opacity:1}}
-            transition={{delay:3, duration:1.5, ease:'easeIn'}}>
+            transition={{delay:3, duration:1.5, ease:'easeIn'}}
+            whileHover={{ scale: 1.1 }}>
           
           
             <h1>01</h1>

@@ -34,8 +34,8 @@ return(
         </ul>
       </div>
 
-
       <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+
   </div>
         
 </div>

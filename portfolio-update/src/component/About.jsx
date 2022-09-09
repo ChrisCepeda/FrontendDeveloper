@@ -9,8 +9,8 @@ const About = () => {
        
      <motion.div className='image-me'
          initial={{x:-20, opacity: 0,}}
-         whileInView={{ x:0,opacity: 1}}
-          transition={{duration:1.5, ease:'easeIn'}}>
+         whileInView={{x:0, opacity: 1}}
+          transition={{duration:1.2, ease:'easeIn'}}>
 
         <img src={Aboutme} alt='christina'/>   
     </motion.div>
@@ -21,6 +21,7 @@ const About = () => {
        initial={{x:20, opacity: 0}}
        whileInView={{ x:0,opacity: 1}}
         transition={{delay:2, duration:1.1, ease:'easeIn'}}>
+     
         <h1>Hello!</h1> </motion.div>
 
         <motion.div className='text'

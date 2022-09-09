@@ -8,12 +8,10 @@ import './Pages.scss'
 const Pages = () => {
   return (
   
-    <div className='Wrapper' id="outer-container">
-     <div id="page-wrap">
+    <div className='Wrapper'>
       <Navbar />
        <Home />
      </div>
-    </div>
     
   )
 }
