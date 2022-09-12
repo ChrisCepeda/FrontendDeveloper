@@ -9,12 +9,13 @@
     
 
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:767px) {
     grid-template-columns: 1fr;
     justify-items: center;
     background-color: rgba(255, 255, 255, 0.5);          
     backdrop-filter: blur 5px;
     margin:2px;
+    max-width: 100%;
 
 }
 }
@@ -51,7 +52,8 @@
         }
        
         @media screen and (max-width:768px) {
-            width: 100%;
+           max-width: 100%;
+           justify-self: center;
            
             
         }
@@ -74,8 +76,11 @@
         grid-template-columns: 1fr 1fr 1fr;
         float:right;
 
-        @media  screen and (max-width: 768px) {
+        @media  screen and (max-width: 767px) {
           grid-template-columns: 1fr;
+          float: none;
+          margin:0;
+          width: 100%;
          
 
            
@@ -109,30 +114,12 @@
       
       }
 
-      .Intro-card h4::after {
-        content:'';
-        display: block;
-        width: 70px;
-        left:3rem;
-        height: 50px;
-        border-bottom: solid 5px #101415;
-        transition: left 250ms ease-in-out, right 250ms ease-in-out;
-        transform: scaleX(0);  
-        opacity: 1;
-      }
+  
       
      .Intro-card h4:hover{
-        opacity: 1;
+        border-bottom: 1px solid #000;
       }
       
 
       
-      .Content h2 {
-        margin-left: 3px;
-        font-size: 1.5em;
-        font-weight: 700;
-        color: rgb(25, 61, 49);        
-        pointer-events: none;
-        text-align: center;
-        
-      }
+  
