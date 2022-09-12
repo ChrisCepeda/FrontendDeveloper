@@ -9,7 +9,7 @@
     
 
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:767px) {
     grid-template-columns: 1fr;
     justify-items: center;
     background-color: rgba(255, 255, 255, 0.5);          
@@ -76,7 +76,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         float:right;
 
-        @media  screen and (max-width: 768px) {
+        @media  screen and (max-width: 767px) {
           grid-template-columns: 1fr;
           float: none;
           margin:0;

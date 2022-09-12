@@ -5,9 +5,9 @@ function App() {
   return (
     <>
   
-  <Pages />
+     <Pages />
   </>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,8 +1,7 @@
 
-
-
   .Wrapper{
     width: 100%;
+    height: auto;
     max-width: 100%;
     background-color: rgb(129, 147, 141);
     background-image: url(../assets/images/intro.jpg);
@@ -13,15 +12,15 @@
     //border: 1px solid #1f4037;
   
     
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width:767px) {
        
         max-width: 100%;
-        background-size: contain;
-        background-position: top center;
+        background-size: cover;
+        background-position: top right;
 
         
     }
-  @media screen and (max-width:845px) {
+ /* @media screen and (max-width:845px) {
        
         width: 100%;
         margin:0; 
@@ -29,7 +28,7 @@
         background-position: bottom right;
         
     }
-    
+    */
 
 
   }

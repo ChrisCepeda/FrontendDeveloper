@@ -11,6 +11,7 @@ const Pages = () => {
     <div className='Wrapper'>
       <Navbar />
        <Home />
+       
      </div>
     
   )
