@@ -9,7 +9,7 @@ const Hero = () => {
      <motion.div
      initial={{y:100, opacity: 0,}}
      animate={{y:0, opacity: 1,}}
-     transition={{duration:1.5, ease:'easeIn'}}
+     transition={{duration:1.1, ease:'easeIn'}}
      
      ><h1>CHRISTINA <br></br>CEPEDA</h1>
      </motion.div> 
@@ -21,7 +21,7 @@ const Hero = () => {
         
           initial={{x:100, opacity: 0,}}
            animate={{x:0, opacity:1}}
-            transition={{delay:3, duration:1.5, ease:'easeIn'}}
+            transition={{delay:2, duration:1.1, ease:'easeIn'}}
             whileHover={{ scale: 1.1 }}>
           
           
@@ -35,7 +35,7 @@ const Hero = () => {
         
         initial={{x:100, opacity: 0,}}
          animate={{x:0, opacity:1}}
-          transition={{delay:4, duration:1.5, ease:'easeIn'}}>
+          transition={{delay:3, duration:1.2, ease:'easeIn'}}>
         
         
           <h1>02</h1>
@@ -48,7 +48,7 @@ const Hero = () => {
         
         initial={{x:20, opacity: 0}}
          animate={{x:0, opacity:1}}
-          transition={{delay:5, duration:1.5, ease:'easeIn'}}>
+          transition={{delay:4, duration:1.3, ease:'easeIn'}}>
         
         
           <h1>03</h1>

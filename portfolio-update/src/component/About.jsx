@@ -11,8 +11,8 @@ const About = () => {
        <motion.div className='image-me'
          initial={{x:-20, opacity: 0,}}
          whileInView={{x:0, opacity: 1}}
-          transition={{duration:1.2, ease:'easeIn'}}>
-
+         transition={{delay:1, duration:1.0, ease:'easeIn'}}>
+          
         <img src={Aboutme} alt='christina'/>   
     </motion.div>
 
