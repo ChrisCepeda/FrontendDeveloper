@@ -5,6 +5,7 @@
     width: 100%;
     max-width: 100%;
     margin-bottom: 2rem;
+    height: 80vh;
     
 
     @media screen and (max-width:768px ) {
@@ -21,6 +22,9 @@
         max-width: 100%;
         border-radius: 0 100% 0 0;
         margin: 2rem;
+        transform: none;
+        padding-top: 2rem;
+
         
 
         img{
@@ -42,11 +46,11 @@
   .text-me{
         position:relative;
         z-index: 1;
+
         
 
 
         h1{
-        margin-top: 1rem;
         opacity:0.5;
         font-size: 8em;
         font-weight: 900;
@@ -67,8 +71,8 @@
         position:absolute;
         z-index:100;
         margin-right: 6rem;
-        margin-top:5rem;
-        width: 300px;
+        margin-top: 8rem;
+        width: 330px;
         justify-self: end;
         text-align: center;
 

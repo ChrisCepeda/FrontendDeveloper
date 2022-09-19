@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "./Modal.scss";
-import design from'../assets/images/modaldesign.jpg'
+import "./Modalcode.scss";
 
 export default function Modal() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -26,9 +25,7 @@ export default function Modal() {
   return (
     <div className="modals">
       <button className='button-modal' onClick={() => setModalIsOpen(true)}>
-      <img src={design} alt='design'/>
-      <h1>Design</h1>
-
+      <p>Read More </p>
       </button>
       <AnimatePresence>
         {modalIsOpen && (
