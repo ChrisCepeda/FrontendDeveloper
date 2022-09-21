@@ -48,7 +48,8 @@ const Hero = () => {
         
         initial={{x:20, opacity: 0}}
          animate={{x:0, opacity:1}}
-          transition={{delay:4, duration:1.3, ease:'easeIn'}}>
+          transition={{delay:4, duration:1.3, ease:'easeIn'}}
+           >
         
         
           <h1>03</h1>
