@@ -24,6 +24,7 @@ import wordpress from '../assets/images/wordpress.png'
 import ux from '../assets/images/ux-design.png'
 import ui from '../assets/images/design.png'
 import diplom from '../assets/images/diploma.png'
+import bachelor from '../assets/images/bachelor.png'
 
 
 
@@ -134,6 +135,14 @@ const Work = () => {
 
         <img src={diplom} alt='diploma'/>
         <p>Diploma Frontend Development
+        </p>
+
+        <img src={bachelor} alt='bacheloreducation'/>
+        <p>Bachelor in Education
+        </p>
+
+        <img src={bachelor} alt='bachelorspanish'/>
+        <p>Bachelor in Spanish
         </p>
 
         </div>
