@@ -25,6 +25,11 @@ import ux from '../assets/images/ux-design.png'
 import ui from '../assets/images/design.png'
 import diplom from '../assets/images/diploma.png'
 import bachelor from '../assets/images/bachelor.png'
+import express from '../assets/images/express.js.png'
+import mongodb from '../assets/images/mongodb.png'
+import materialui from '../assets/images/materialui.png'
+import ac from '../assets/images/ac.png'
+
 
 
 
@@ -35,8 +40,9 @@ const Work = () => {
     
      <motion.div
      initial={{y:100, opacity: 0,}}
-     animate={{y:0, opacity: 1,}}
-     transition={{duration:1.5, ease:'easeIn'}}
+     whileInView={{y:0, opacity: 1,}}
+     viewport={{ once: true }}
+     transition={{duration:0.5, ease:'easeIn'}}
 
      
      ><h1>SKILLS</h1>
@@ -49,6 +55,7 @@ const Work = () => {
           <motion.div className='work-card'
            initial={{x:20, opacity: 0,}}
            whileInView={{x:0, opacity:1}}
+           viewport={{ once: true }}
            transition={{delay:1, duration:.5, ease:'easeIn'}}
           
             >
@@ -66,17 +73,22 @@ const Work = () => {
               <img src={react} alt='react'/>
               <img src={node} alt='node'/>
               <img src={api} alt='api' />
-              <img src={firebase} alt='firebase'/>
+              <img src={express} alt='express' />
+            
               <p> React</p>
               <p>Node.js</p>
               <p>API</p>
-              <p> Firebase</p>
-
-
+              <p>Express</p>
+              <img src={mongodb} alt='mongodb'/>
+              <img src={firebase} alt='firebase'/>
               <img src={xampp} alt='xampp'/>
               <img src={wordpress} alt='wordpress'/>
-             
-              <p>Xampp</p>
+              <p>MongoDB</p>
+              <p> Firebase</p>
+              <p>XAMPP</p>
+              <p>Wordpress</p>
+              
+              
           </div>
 
         
@@ -89,7 +101,8 @@ const Work = () => {
           <motion.div className='work-card'
            initial={{x:20, opacity: 0,}}
            whileInView={{x:0, opacity:1}}
-           transition={{delay:2, duration:.5, ease:'easeIn'}}
+           viewport={{ once: true }}
+           transition={{delay:1.5, duration:.5, ease:'easeIn'}}
            >
            
            <h2>TOOLS</h2>
@@ -98,19 +111,31 @@ const Work = () => {
               <img src={git} alt='git'/>
               <img src={github} alt='github'/>
               <img src={figma} alt='figma' />
-              <p> VSC</p>
+              <p>VSC</p>
               <p>GIT</p>
               <p>GitHub</p>
               <p>Figma</p>
-
-
-
+              <img src={materialui} alt='materialui'/>
               <img src={ps} alt='photoshop'/>
               <img src={trello} alt='trello'/>
               <img src={miro} alt='miro'/>
-              <p>Photoshop</p>
-              <p> Trello</p>
+              <p style={{fontSize:14}}>MaterialUI</p>
+              <p style={{fontSize:14}}>Photoshop</p>
+              <p>Trello</p>
               <p>Miro</p>
+        
+              <img src={ui} alt='ui'/>
+              <img src={ux} alt='ux'/>
+              <img src={ac} alt='accessibility'/><br></br>
+  
+           
+              <p>UI</p>
+              <p>UX</p>
+              <p style={{fontSize:13}}>Accessibility</p>
+      
+        
+            
+
           </div>
 
           <Modaltools />
@@ -122,16 +147,13 @@ const Work = () => {
         
           initial={{x:20, opacity: 0}}
           whileInView={{x:0, opacity:1}}
-          transition={{delay:3, duration:.5, ease:'easeIn'}}>
+          viewport={{ once: true }}
+          transition={{delay:2, duration:.5, ease:'easeIn'}}>
         
         
-        <h2>COMPETENCE</h2>
+        <h2>DEGREES</h2>
         <div className='tech-two'>
-        <img src={ux} alt='user experience'/>
-        <p>UX - User Experience</p>
-
-        <img src={ui} alt='user interface'/>
-        <p>UI - User Interface</p>
+       
 
         <img src={diplom} alt='diploma'/>
         <p>Diploma Frontend Development

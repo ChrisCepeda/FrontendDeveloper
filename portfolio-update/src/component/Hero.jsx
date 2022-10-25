@@ -9,7 +9,7 @@ const Hero = () => {
      <motion.div
      initial={{y:100, opacity: 0,}}
      animate={{y:0, opacity: 1,}}
-     transition={{duration:1.1, ease:'easeIn'}}
+     transition={{duration:0.5, ease:'easeIn'}}
      
      ><h1>CHRISTINA <br></br>CEPEDA</h1>
      </motion.div> 
@@ -19,9 +19,9 @@ const Hero = () => {
     <div className='Card-wrapper'>
           <motion.div className='Intro-card'
         
-          initial={{x:100, opacity: 0,}}
-           animate={{x:0, opacity:1}}
-            transition={{delay:2, duration:1.1, ease:'easeIn'}}
+          initial={{y:100, opacity: 0,}}
+           animate={{y:0, opacity:1}}
+            transition={{delay:1, duration:0.5, ease:'easeIn'}}
             whileHover={{ scale: 1.1 }}>
           
           
@@ -33,9 +33,9 @@ const Hero = () => {
 
           <motion.div className='Intro-card'
         
-        initial={{x:100, opacity: 0,}}
-         animate={{x:0, opacity:1}}
-          transition={{delay:3, duration:1.2, ease:'easeIn'}}>
+        initial={{y:100, opacity: 0,}}
+         animate={{y:0, opacity:1}}
+          transition={{delay:1.5, duration:0.8, ease:'easeIn'}}>
         
         
           <h1>02</h1>
@@ -46,9 +46,9 @@ const Hero = () => {
 
         <motion.div className='Intro-card'
         
-        initial={{x:20, opacity: 0}}
-         animate={{x:0, opacity:1}}
-          transition={{delay:4, duration:1.3, ease:'easeIn'}}
+        initial={{y:100, opacity: 0}}
+         animate={{y:0, opacity:1}}
+          transition={{delay:1.8, duration:1.2, ease:'easeIn'}}
            >
         
         
