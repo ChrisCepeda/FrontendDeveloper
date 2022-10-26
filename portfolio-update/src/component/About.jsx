@@ -11,6 +11,7 @@ const About = () => {
        <motion.div className='image-me'
          initial={{x:-20, opacity: 0,}}
          whileInView={{x:0, opacity: 1}}
+         viewport={{ once: true }}
          transition={{delay:1, duration:0.5, ease:'easeIn'}}
         
 
@@ -23,6 +24,7 @@ const About = () => {
     <motion.div className='text-me'
        initial={{y:20, opacity: 0}}
        whileInView={{y:0, opacity: 1}}
+       viewport={{ once: true }}
         transition={{delay:1, duration:0.5, ease:'easeIn'}}>
      
         <h1>Hello!</h1> </motion.div>
@@ -32,7 +34,8 @@ const About = () => {
         <motion.div className='text'
         initial={{y:10, opacity: 0}}
         whileInView={{ y:0,opacity: 1}}
-         transition={{delay:2, duration:1, ease:'easeIn'}}>
+        viewport={{ once: true }}
+         transition={{delay:2, duration:0.8, ease:'easeIn'}}>
         <p> I'm a Stockholm based Frontend developer with 
           great experience in designing solutions. <br></br>
           Whether it is designing solutions on the web for clients,
