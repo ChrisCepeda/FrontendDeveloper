@@ -1,0 +1,103 @@
+.footer{
+    background-color: rgb(160, 134, 146);
+    margin-bottom: 3rem;
+    padding: 20px;
+  
+    
+    @media only screen and (max-width: 920px){
+      margin: 0;
+    }
+     
+  
+   .footer-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 20px;
+
+}
+
+
+.footer-title p {
+  
+    border-bottom: solid 1.5px #fff;
+    color: #fff;
+    font-family:'Barlow Semi Condensed', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+}
+.footer-title p:hover {
+   
+    color: rgb(25, 61, 49);
+    font-weight: 700;
+}
+
+// CONTACT GRID
+.contact{
+    text-align: left;
+
+.footer-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.footer-mail,
+.footer-linked,
+.footer-github{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.footer-mail:hover,
+.footer-linked:hover, 
+.footer-github:hover{
+    color: rgb(25, 61, 49);
+    font-weight: 700;
+    
+}
+}
+
+//SUBSCRIPTION
+.footer-subscription{
+    text-align: center;
+}
+
+//SOCIALA
+
+
+//Form
+
+.form{
+    width: 50%;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    border: solid 2px rgb(25, 61, 49);
+}
+.form-button{
+    width: 32%;
+    padding: 10px; 
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 2px rgb(25, 61, 49);
+    color: #fff;
+    background-color:rgb(141, 134, 137);
+    cursor:pointer;
+    text-transform: uppercase;
+&:hover{
+    
+    background-color: antiquewhite;
+    color: #000;
+}
+
+}
+}

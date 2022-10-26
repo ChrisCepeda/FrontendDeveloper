@@ -131,7 +131,7 @@ const Work = () => {
            
               <p>UI</p>
               <p>UX</p>
-              <p style={{fontSize:13}}>Accessibility</p>
+              <p style={{fontSize:14}}>Accessibility</p>
       
         
             
