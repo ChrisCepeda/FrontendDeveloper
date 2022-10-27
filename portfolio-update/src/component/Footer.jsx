@@ -3,21 +3,28 @@ import './Footer.scss'
 import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa'
 import { useState } from "react";
 import db from '../firebase';
+import firebase from 'firebase/app';
+
+
 
 function Footer(){
 const [input, setInput] = useState("");
-const inputHandler = (e) =>{
-  setInput(e.tagret.value);
+
+ const inputHandler = (e) => {
+  setInput(e.target.value);
 };
+
+
 const submitHandler = (e) => {
   e.preventDefault();
   if (input){
     console.log(input);
-    //add to forebase 
+
     db.collection("emails").add({
-      email: input, 
-      time: firebase.firestore.FieldValue.serverTimeStamp(),
+      email: input()
+  
     });
+    setInput("");
   }
 };
 
@@ -53,8 +60,8 @@ const submitHandler = (e) => {
           <div className='footer-title'>
             <p>GET MY RESUME </p>
           </div>
-          <form action="">
-            <input className='form' type="email" onChange={inputHandler}/>
+          <form onSubmit={submitHandler}>
+            <input className='form' type="email" onChange={inputHandler} value={input}/>
             <button className='form-button' type="submit">Submit</button>
           </form>
 
@@ -71,7 +78,7 @@ const submitHandler = (e) => {
     </div>
     </div>
   )
-}
+};
 
 
 export default Footer
