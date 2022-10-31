@@ -2,31 +2,40 @@ import React from 'react'
 import './Footer.scss'
 import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa'
 import { useState } from "react";
-import db from '../firebase';
-import firebase from 'firebase/app';
-
+import {db} from '../firebase';
+import { addDoc, collection } from 'firebase/firestore'
 
 
 function Footer(){
-const [input, setInput] = useState("");
-
- const inputHandler = (e) => {
-  setInput(e.target.value);
-};
+const [input, setInput] = useState('');
+const [message, setMessage] = useState('');
 
 
-const submitHandler = (e) => {
-  e.preventDefault();
-  if (input){
-    console.log(input);
 
-    db.collection("emails").add({
-      email: input()
-  
-    });
-    setInput("");
+function submitHandler(e) {
+  e.preventDefault()
+  if (input === '') {
+    return 
   }
-};
+
+    
+  const emailCollRef = collection(db, 'email')
+  addDoc(emailCollRef, {
+    email: input,
+    myDate: [ new Date() ]
+    })
+
+  .then(response =>{
+    console.log(response)
+  }).catch(error =>{
+    console.log(error.message)
+  })
+  setInput('')
+  setMessage('THANK YOU!')
+  setTimeout(() => {
+    setMessage('');
+  }, 5000)
+}
 
   return (
     <div className='footer'>
@@ -58,21 +67,33 @@ const submitHandler = (e) => {
 
       <div className='footer-subscription'>
           <div className='footer-title'>
-            <p>GET MY RESUME </p>
+            <p>SIGN UP FOR NEWSLETTER
+    
+            </p>
           </div>
           <form onSubmit={submitHandler}>
-            <input className='form' type="email" onChange={inputHandler} value={input}/>
+            <input className='form' type="email" value={input} onChange={ e =>setInput(e.target.value)} />
             <button className='form-button' type="submit">Submit</button>
           </form>
+          <div className='validation'>
+          <h2>{message} </h2>
+           </div>
 
       </div>
 
       <div className='social'>
       <div className='footer-title'>
-            <p>SOCIALA </p>
+            <p>LATEST BLOG</p>
           </div>
           <div className='border-bottom'>
           </div>
+          <ul className='bloglist'>
+            <li>LEMONTREE</li>
+            <li>CLIENT PROJECT</li>
+            <li>VACAY</li>
+            <li>MERN PROJECT</li>
+            
+          </ul>
       </div>
 
     </div>

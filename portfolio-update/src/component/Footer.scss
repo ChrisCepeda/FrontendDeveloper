@@ -1,7 +1,7 @@
 .footer{
     background-color: rgb(160, 134, 146);
-    margin-bottom: 3rem;
-    padding: 20px;
+    margin-bottom: 1rem;
+    padding: 35px;
   
     
     @media only screen and (max-width: 920px){
@@ -28,6 +28,7 @@
     letter-spacing: 2px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    text-align: center;
     
 }
 .footer-title p:hover {
@@ -38,12 +39,13 @@
 
 // CONTACT GRID
 .contact{
-    text-align: left;
+    text-align: center;
+
 
 .footer-icons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding:10px;
+    justify-items: center;
 
 }
 
@@ -72,7 +74,6 @@
     text-align: center;
 }
 
-//SOCIALA
 
 
 //Form
@@ -80,25 +81,56 @@
 .form{
     width: 50%;
     position: relative;
+    z-index: 1;
     padding: 10px;
     border-radius: 5px 0px 0px 5px;
-    border: solid 2px rgb(25, 61, 49);
+    border: solid 2px rgb(201, 208, 205);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 1
 }
 .form-button{
     width: 32%;
     padding: 10px; 
     text-align: center;
     border-radius: 0px 5px 5px 0px;
-    border: solid 2px rgb(25, 61, 49);
+    border: solid 2px rgb(201, 208, 205);
     color: #fff;
-    background-color:rgb(141, 134, 137);
+    background-color:rgb(109, 126, 120);
     cursor:pointer;
     text-transform: uppercase;
-&:hover{
+   
+    &:hover{
     
-    background-color: antiquewhite;
+    background-color: rgb(184, 182, 178);
     color: #000;
 }
+}
+
+.validation h2{
+    color: #fff;
+    font-family:'Barlow Semi Condensed', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+//BLOG
+.bloglist{
+    font-family:'Barlow Semi Condensed', Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+.bloglist li:hover{
+
+    color: rgb(25, 61, 49);
+    font-weight: 700;
 
 }
 }
