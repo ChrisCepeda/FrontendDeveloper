@@ -1,0 +1,12 @@
+  .app {
+    background-image: url("./assets/images/intro.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: #bbc2c0;
+
+    
+    @media screen and (max-width: 768px) {
+        background-size: cover;
+        background-position: bottom right;
+    }
+    }
