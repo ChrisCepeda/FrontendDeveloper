@@ -8,12 +8,12 @@ import Work from '../component/Work'
 
 const Home = () => {
   return (
-    <>
+    <div className='home'>
      <Hero />
      <About/>
      <Work/>
 
-    </>
+    </div>
   )
 }
 

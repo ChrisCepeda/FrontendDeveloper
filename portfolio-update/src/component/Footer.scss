@@ -1,7 +1,7 @@
 .footer{
-    background-color: rgb(160, 134, 146);
+    background-color: rgb(109, 126, 120);
     margin-bottom: 1rem;
-    padding: 35px;
+    padding: 38px;
   
     
     @media only screen and (max-width: 920px){
@@ -14,7 +14,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     padding: 20px;
-
+    
+    @media screen and (max-width: 767px){
+        grid-template-columns:1fr ;
+        
+    }
 }
 
 

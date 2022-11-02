@@ -2,6 +2,7 @@
 import './Navbar.scss'
 import { FaHome } from 'react-icons/fa'
 import Sidebar from './Sidebar'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -23,18 +24,23 @@ return(
 
       <div  className="nav-links">
         <ul>
+        <NavLink to="/" activeClassName="active">
+ Home
+</NavLink>
+
           
-            <li><a href="/">PROJECTS</a></li>
-            <li><a href="/">BLOG</a></li>
-            <li><a href="/">ABOUT</a></li>
-            <li><a href="/" className='active'>
+            <li><NavLink to="/Projects" activeClassName="active">PROJECTS</NavLink></li>
+            <li><a href="/Blog">BLOG</a></li>
+            <li><a href="/About">ABOUT</a></li>
+            <li><a href="/Home" className='active'>
            <FaHome size={26} style={{verticalAlign:'bottom'}}  />
-      
             </a></li>
+           
+            <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+
         </ul>
       </div>
 
-      <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
 
   </div>
         
