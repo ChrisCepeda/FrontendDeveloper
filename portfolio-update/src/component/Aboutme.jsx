@@ -12,7 +12,7 @@ const About = () => {
          initial={{x:20, opacity: 0}}
          whileInView={{x:0, opacity:1}}
          viewport={{ once: true }}
-         transition={{delay:2, duration:.5, ease:'easeIn'}}>
+         transition={{delay:1, duration:.5, ease:'easeIn'}}>
              
            <h2>FRONTEND DEVELOPMENT</h2>  
          <a href='https://lemontree.se/' target='_blank'rel="noreferrer">  <h3>LEMONTREE INTERNSHIP</h3></a>
@@ -28,7 +28,7 @@ const About = () => {
              initial={{x:20, opacity: 0}}
              whileInView={{x:0, opacity:1}}
              viewport={{ once: true }}
-             transition={{delay:2, duration:.5, ease:'easeIn'}}>
+             transition={{delay:1.5, duration:.5, ease:'easeIn'}}>
              
            <h2>DESIGN</h2>  
               <h3>UX & UI</h3>

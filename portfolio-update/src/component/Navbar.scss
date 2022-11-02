@@ -74,7 +74,8 @@
     font-weight: 600;
 }
 
-.nav-links ul li a:hover::after {
+.nav-links ul li a:hover::after,
+.nav-links ul li a.active::after{
    
     content: '';
     width: 30px;
@@ -85,5 +86,12 @@
     left: 30px;
 
 }
+.nav-links li>.active {
+    color:rgb(25, 61, 49);
+   
+  }
+
+
+
 
 

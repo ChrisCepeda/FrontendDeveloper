@@ -24,17 +24,12 @@ return(
 
       <div  className="nav-links">
         <ul>
-        <NavLink to="/" activeClassName="active">
- Home
-</NavLink>
-
-          
-            <li><NavLink to="/Projects" activeClassName="active">PROJECTS</NavLink></li>
-            <li><a href="/Blog">BLOG</a></li>
-            <li><a href="/About">ABOUT</a></li>
-            <li><a href="/Home" className='active'>
+            <li><NavLink to="/Projects" activeclassname="active">PROJECTS</NavLink></li>
+            <li><NavLink to="/Blog" activeclassname="active">BLOG</NavLink></li>
+            <li><NavLink to="/About" activeclassame='active'>ABOUT</NavLink></li>
+            <li><NavLink to="/Home" activeclassname='active'>
            <FaHome size={26} style={{verticalAlign:'bottom'}}  />
-            </a></li>
+            </NavLink></li>
            
             <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
 
