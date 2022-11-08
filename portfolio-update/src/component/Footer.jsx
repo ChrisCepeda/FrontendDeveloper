@@ -85,8 +85,7 @@ function submitHandler(e) {
       <div className='footer-title'>
             <p>LATEST BLOG</p>
           </div>
-          <div className='border-bottom'>
-          </div>
+     
           <ul className='bloglist'>
             <li>LEMONTREE</li>
             <li>CLIENT PROJECT</li>

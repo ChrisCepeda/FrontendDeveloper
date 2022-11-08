@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const About = () => {
   return (
    
-    <div className='about-container'>
+    <div className='aboutme-container'>
         <div className='card-wrapper'>
         
         <motion.div className='about-card'

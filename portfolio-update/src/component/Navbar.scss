@@ -1,19 +1,20 @@
-.nav {
+.Nav {
     background-color: transparent;
     width: 100%;
+    max-width: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
    
     
 
-.navbar {
+.Navbar {
     display: flex;
     justify-content:space-between;
     justify-items: flex-end;
     align-items: center;
+    padding: 5px;
    
-    
-    
-}
+ 
 }
 .title{
 
@@ -46,6 +47,10 @@
     text-align: right;
     justify-self: end;
      
+    @media screen and (max-width: 1023px) {
+        display:none;
+    
+}
 }
 
 .nav-links ul li{
@@ -89,7 +94,10 @@
 .nav-links li>.active {
     color:rgb(25, 61, 49);
    
+
   }
+
+}
 
 
 
