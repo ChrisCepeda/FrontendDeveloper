@@ -1,20 +1,17 @@
 
 import './Navbar.scss'
 import { FaHome } from 'react-icons/fa'
-import Sidebar from './Sidebar'
 import { NavLink } from 'react-router-dom'
-
-
-
+import SideNav from '../SideNav/SideNav'
 
 const Navbar = () => {
 
 return(
 
 
-    <div className='nav'>
+    <div className='Nav'>
         
-    <div className="navbar">
+    <div className="Navbar">
 
       <div className="title">
           <h1>CEPEDA PORTFOLIO</h1>
@@ -30,13 +27,10 @@ return(
             <li><NavLink to="/Home" activeclassname='active'>
            <FaHome size={26} style={{verticalAlign:'bottom'}}  />
             </NavLink></li>
-           
-            <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-
         </ul>
       </div>
-
-
+      <SideNav />
+     
   </div>
         
 </div>

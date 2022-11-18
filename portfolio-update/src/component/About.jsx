@@ -28,7 +28,7 @@ const About = () => {
      
         <h1>Hello!</h1> </motion.div>
 
-        <motion.div className='text'
+        <motion.div className='about-text'
         initial={{y:10, opacity: 0}}
         whileInView={{ y:0,opacity: 1}}
         viewport={{ once: true }}

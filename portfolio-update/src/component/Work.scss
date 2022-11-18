@@ -6,17 +6,7 @@
   .work-container{
       width: 100%;
       padding-top: 20px;
-      margin-left: 1rem;
-
-  
-  @media screen and (max-width:767px) {
-      grid-template-columns: 1fr;
-      justify-items: center;
-      margin:2px;
-      max-width: 100%;
-  
-  }
-  }
+      justify-items: center;  }
   .work-container h1{
       margin-left: 2rem;
       font-family: 'Barlow Semi Condensed', Verdana;       
@@ -34,13 +24,13 @@
     justify-items: center;
 
 
-    @media  screen and (max-width: 767px) {
+    @media  screen and (max-width: 768px) {
       grid-template-columns: 1fr;
       float: none;
       margin:0;
-      width: 100%;}
+      max-width: 100%;}
      
-      @media  screen and (min-width: 768px) and (max-width:1024px){
+      @media  screen and (min-width: 769px) and (max-width:1040px){
         grid-template-columns: 1fr 1fr;
         float: none;
         margin:0;
