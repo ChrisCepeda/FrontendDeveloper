@@ -48,15 +48,23 @@ function submitHandler(e) {
           </div>
 
           <div className='footer-icons'>
+
             <div className='footer-linked'>
+            <a href="https://linkedin.com/in/christina-cepeda-313099228/?trk=public_profile_samename-profile&originalSubdomain=se" 
+             target="_blank" rel="noreferrer"> 
           <FaLinkedin size={26} style={{verticalAlign:'bottom'}}></FaLinkedin>
-          </div>
+          </a></div>
+
             <div className='footer-mail'>
+            <a href="mailto:hello@cepeda.se">
            <FaRegEnvelope size={26} style={{verticalAlign:'bottom'}}></FaRegEnvelope>
-             </div>
-             <div className='footer-github'>
+           </a></div>
+          
+          <div className='footer-github'>  
+          <a href="https://github.com/ChrisCepeda" 
+           target="_blank" rel="noreferrer"> 
            <FaGithub size={26} style={{verticalAlign:'bottom'}}></FaGithub>
-             </div>
+           </a></div>
 
           </div>
 
@@ -77,6 +85,10 @@ function submitHandler(e) {
           </form>
           <div className='validation'>
           <h2>{message} </h2>
+           </div>
+
+           <div className="copyright">
+            <p> 2023© CEPEDA.SE</p>
            </div>
 
       </div>

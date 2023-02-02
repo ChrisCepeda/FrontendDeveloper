@@ -19,6 +19,16 @@
         grid-template-columns:1fr ;
         
     }
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    a:hover {
+   
+        color: rgb(25, 61, 49);
+        font-weight: 700;
+    }
 }
 
 
@@ -76,6 +86,17 @@
 //SUBSCRIPTION
 .footer-subscription{
     text-align: center;
+}
+
+//Copyright
+.copyright p{
+    padding: 2rem;
+    color: #fff;
+    font-family:'Barlow Semi Condensed', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  
 }
 
 
