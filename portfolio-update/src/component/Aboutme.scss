@@ -1,80 +1,110 @@
-.aboutme-container{
-
-    width: 100%;
- 
-    
-    @media screen and (max-width:768px){
-      grid-template-columns: 1fr;
-
-    }
-
-   }
-
-
-.about-card{
+.about-hero{
+  width: 100%;
+}
+.about-container{
     display: grid;
-    grid-template-columns: 1fr;
-    width: 500px;
-    max-width: 100%;
-    justify-self: center;
-    border-radius: 10px;
-    margin: 30px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
-    overflow: hidden;
-    background-color: rgba(235, 229, 229, 0.7);          
-    backdrop-filter: blur 5px;
-
-     
-    &:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-     }
+    grid-template-columns: 1fr 2fr;
+    margin-left: 1rem;
   
-   @media screen and (max-width:768px) {
-      max-width: 100%;
-      justify-self: center;  
-              
-   } 
+
+@media screen and (max-width:767px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: rgba(255, 255, 255, 0.5);          
+    backdrop-filter: blur 5px;
+    margin:2px;
+    max-width: 100%;
+
+}
+}
+.about-container h1{
+    margin-left: 3px;
+    font-size: 4em;
+    font-weight: 900;
+    color: rgb(25, 61, 49);        
+    pointer-events: none;
+    text-align: center;
+    z-index: 999;
 
 }
 
-.about-card h1 {
-    margin:6px;
-    font-size: 1.8em;
-    font-weight: 900;
-    font-family: 'Barlow Semi Condensed', Verdana;       
-    color:rgb(25, 61, 49);          
-    text-align: center;
-    
-  }
 
-  .about-card h2{
-    margin:0;
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: 'Barlow Semi Condensed', Verdana;       
-    color:rgb(25, 61, 49);          
-    text-align: left;
-    margin: 1rem;
-    border-bottom: 2px solid rgb(25, 61, 49);    
-    
-  }
-
-
-  .about-card h3:hover{
-    text-decoration:1.5px  rgb(25, 61, 49) solid underline;  
-
-  }
-
-
-  .about-card p {
-   
-    font-size: 1em;
-    font-weight: bolder;
-    font-family: 'Barlow Semi Condensed', Verdana;       
-    color: rgb(25, 61, 49);        
-    pointer-events: none;
-    text-align: left;
-    margin:16px;
-
+.about-cardone,
+.about-cardtwo,
+.about-cardthree{
+          display:grid;
+          grid-template-rows: 1fr;
+          max-width: 100%;
+          border-radius: 10px;
+          margin: 10px;
+          /*display: inline-block;
+         /* overflow: hidden;*/
+          box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
+          background-color: rgba(255, 255, 255, 0.8);          
+          backdrop-filter: blur 5px;
+       
+        @media screen and (max-width:768px) {
+           max-width: 100%;
+           justify-self: center;
+            
+        }
+       
+        p{
+          font-size: 0.9em;
+          font-weight: 600;
+          color: rgb(25, 61, 49); 
+          padding: 7px;
+        }
+        h1 {
+          font-size: 9.5em;
+          font-weight: 900;
+          font-family: Georgia, 'Times New Roman', Times, serif;       
+          color: rgb(105, 60, 82);        
+          pointer-events: none;
+          text-align: center;
+          bottom: 20px;
+          opacity: 0.5;
+          margin-block: -14px;
+          
+        }
   
-  }
+      h4 {
+         
+          font-size: 1.8em;
+          font-weight: bolder;
+          font-family: 'Barlow Semi Condensed', Verdana;       
+          color: rgb(25, 61, 49);        
+          pointer-events: none;
+          text-align: center;
+          margin-block: -3rem;
+        }
+  
+  
+  
+        
+    }
+    .about-cardone:hover,
+     .about-cardtwo:hover,
+     .aboutcard-three:hover{
+        box-shadow: 8px 17px 24px 0 rgba(0, 0, 0, 0.5);
+       
+      } 
+
+
+
+    .about-wrapper{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+         margin: 20px;    
+
+        @media  screen and (max-width: 767px) {
+          grid-template-columns: 1fr;
+          margin:0;
+          width: 100%;
+           
+        }
+    }
+
+
+    
